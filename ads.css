@@ -1,0 +1,28 @@
+/* CSS styles */
+    .Deathjohnz-johnz {
+      width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .Naruto {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .Sasuki {
+      flex: 0 0 100%;
+      height: 100%;
+    }
+    .tagline {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 5px 10px;
+      background-color: #ff0000;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+    }
