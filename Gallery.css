@@ -221,6 +221,8 @@ footer {
         color: #f3f3f3;
         text-align: center;
         position: relative; /* Change position to relative */
+        display: absolute;
+        bottom: 0;
     }
 
     .footer-upper {
