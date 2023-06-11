@@ -81,6 +81,9 @@ nav {
     .menu li a:hover {
       color: #02f533;
     }
+.hamburger {
+        display: none;
+      }
 
 /* End of Nav Bar*/
 .container {
