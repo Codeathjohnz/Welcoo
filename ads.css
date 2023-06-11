@@ -1,5 +1,5 @@
 /* CSS styles */
-    .Deathjohnz-johnz {
+   .Deathjohnz-johnz {
       width: 800px;
       height: 400px;
       margin: 0 auto;
@@ -26,3 +26,21 @@
       font-weight: bold;
       font-size: 14px;
     }
+
+ @media only screen and (max-width: 600px) {
+     .Deathjohnz-johnz {
+      max-width: 2000px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+      }
+ .Naruto {
+display: flex;
+      transition: transform 0.5s ease-in-out;
+}
+.Sasuki {
+ width: 100%;
+      height: 100%;
+      /*object-fit: cover;*/
+}
