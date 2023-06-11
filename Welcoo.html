@@ -13,7 +13,7 @@
         }
     body {
       margin: 0;
-      background: #02f533;
+      background: #1c1c1b;
     }
 
     nav {
@@ -95,6 +95,45 @@
     .menu li a:hover {
       color: #02f533;
     }
+      .hamburger {
+      display: none;
+    }
+      /* Media query for mobile screens */
+    @media only screen and (max-width: 600px) {
+      .menu {
+        display: none;
+      }
+
+      .menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+      }
+
+      .menu.show li {
+        padding: 10px;
+      }
+
+      .menu.show li a {
+        padding: 0;
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+    }
 
     .slider-container {
       max-width: 2000px;
@@ -137,6 +176,27 @@
       align-items: center;
       background-color: rgba(255, 255, 255, 0.5);
     }
+      @media only screen and (max-width: 600px) {
+          .slider-container {
+      max-width: 2000px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .slide {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .slide img {
+      flex: 0 0 100%;
+      height: 100%;
+    }
+
+      }
 
     #video-modal {
       position: fixed;
@@ -409,24 +469,25 @@ footer {
       <img src="https://codeathjohnz.github.io/Welcoo/Logo.jpg" alt="Logo">
     </a>
     <ul class="menu">
-      <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html">Home</a></li>
-      <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html#l">Product</a></li>
-      <li><a href="https://codeathjohnz.github.io/Welcoo/Gallery.html">Gallery</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#l">Product</a></li>
+      <li><a href="#">Gallery</a></li>
       <li>
-          <a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html">About Us</a>
+          <a href="#">About Us</a>
           <ul class="sub-menu">
-        <li><a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html#cam">About Company</a></li>
-        <li><a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html#aut">Authors</a></li>
-        <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html#footer">Contact Us</a></li>
-      </ul>
+        <li><a href="#">About Company</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>      
         </li>
     </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
   </nav>
 
   <div class="slider-container">
     <div class="slider">
       <div class="slide">
-        <img src="https://github.com/Codeathjohnz/Welcoo/blob/main/pack.jpg?raw=true" alt="Image 1">
+        <img src="https://codeathjohnz.github.io/Welcoo/pack.jpg?raw=true" alt="Image 1">
       </div>
       <div class="slide">
         <img src="https://cdn.thewirecutter.com/wp-content/media/2022/07/laptop-under-500-2048px-acer-1.jpg" alt="Image 2">
@@ -446,7 +507,7 @@ footer {
   </div>
     
     <!--Product html section-->
-    <p id="l" style="background: black; color: black">welcoo</p>
+    <p id="l" style="background: greenyellow; color: greenyellow">welcoo</p>
     <h1 id="ph">Welcoo E-Shop</h1>
     <div class="section2">
 
@@ -562,13 +623,27 @@ footer {
     <!--commercial-->
     <div class="Deathjohnz-johnz">
     <div class="Naruto">
+      
       <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/Metatrade.jpg" alt="Image 1">
+        
+       
       <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/Coffe for Programmer.jpg" alt="Image 2">
+       
+       
       <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/kayes sweet cakes.jpg" alt="Image 3">
+       
+       
          <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/Golden Choco.png" alt="Image 4">
+       
+        
          <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/smld.jpg" alt="Image 5">
+        
+     
          <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/Mojos.jpg" alt="Image 6">
+      
+        
          <img class="Sasuki" src="https://codeathjohnz.github.io/Welcoo/Deathjohnz.jpg" alt="Image 7">
+        
     </div>
   </div>
    
@@ -599,6 +674,8 @@ footer {
       currentIndex = (currentIndex + 1) % slides.length;
       slider.style.transform = `translateX(-${currentIndex * 100}%)`;
     }, slideInterval);
+      
+      
 
     // Video modal functionality
     const playButton = document.querySelector('.play-button');
@@ -607,7 +684,7 @@ footer {
 
     playButton.addEventListener('click', () => {
       const videoPlayer = document.getElementById('video-player');
-      videoPlayer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/nnwGYBqUVwM" allowfullscreen></iframe>';
+      videoPlayer.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/9BtUz8Oyjqs?autoplay=1" frameborder="0" allowfullscreen></iframe>';
       videoModal.classList.add('active');
     });
 
@@ -626,6 +703,11 @@ footer {
         navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
       }
     });
+      //menu script
+      function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('show');
+    }
   </script>
 </body>
 </html>
