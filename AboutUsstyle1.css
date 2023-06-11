@@ -93,6 +93,9 @@ body {
     .menu li a:hover {
       color: #02f533;
     }
+.hamburger {
+      display: none;
+    }
 .container {
     position: absolute;
     background: #1f1e1e57;
