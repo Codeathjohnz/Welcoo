@@ -211,42 +211,44 @@ nav {
     margin: 5px 2px;
     color: #13e00b;
     transition: 0.45s ease;
-    }
-.fa:hover {
+  }
+  
+  .fa:hover {
     opacity: 0.7;
     transform: scale(1.9);
-    }
-footer {
-        background-color: #2e2e2e;
-        color: #f3f3f3;
-        text-align: center;
-        position: relative; /* Change position to relative */
-        display: absolute;
-        bottom: 0;
-    }
-
-    .footer-upper {
-        margin-top: 20px;
-        padding: 20px; /* Add padding to create space around the content */
-    }
-
-    .footer-bottom {
-        background-color: #505050;
-        padding: 15px 0;
-    }
-
-    .footer-bottom p {
-        word-spacing: 3px;
-        text-transform: capitalize;
-        font-size: 14px;
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-    }
-
-    .footer-bottom span {
-        text-transform: uppercase;
-        opacity: .4;
-        font-weight: 200;
-    }
-        
+  }
+  
+  footer {
+    background-color: #2e2e2e;
+    color: #f3f3f3;
+    text-align: center;
+    position: fixed; /* Changed position to fixed */
+    left: 0; /* Added left property */
+    bottom: 0;
+    width: 100%; /* Added width property */
+  }
+  
+  .footer-upper {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .footer-bottom {
+    background-color: #505050;
+    padding: 15px 0;
+  }
+  
+  .footer-bottom p {
+    word-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
         
