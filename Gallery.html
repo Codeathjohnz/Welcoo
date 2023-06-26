@@ -1,191 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcoo|Gallery</title>
     <meta charset="UTF-8">
-     <link rel="icon" type="image/x-icon" href="https://codeathjohnz.github.io/Codeath/Welcoo1.jpg">
-    <link rel="stylesheet" type="text/css" href="pilianan.css">
-  <link rel="stylesheet" type="text/css" href="Gallery.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <title>Under Development</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    
-    <!--Nav bar Area-->
-    <nav>
-    <a href="#" class="logo">
-      <img src="https://scontent.fcgy2-1.fna.fbcdn.net/v/t1.15752-9/351538245_270882328763095_7456193070205108103_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFh2rxOMuZhFrSRA0ggbfL7fT7Qcm-ss8h9PtByb6yzyBsBd0J8lBtSIlt9oTYw3VOX9W7IEtqV7whr2uAV3bAQ&_nc_ohc=Q5Gnr5prZ1gAX9EC-tB&_nc_ht=scontent.fcgy2-1.fna&oh=03_AdTBCwJYZlGZ4qh12Z8nXvTRkRP3Oah_dvx7VqHJ-eYPxw&oe=64A6D07B" alt="Logo">
-    </a>
-    <ul class="menu">
-      <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html">Home</a></li>
-      <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html#l">Product</a></li>
-      <li><a href="https://codeathjohnz.github.io/Welcoo/Gallery.html">Gallery</a></li>
-      <li>
-          <a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html">About Us</a>
-          <ul class="sub-menu">
-        <li><a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html#cam">About Company</a></li>
-        <li><a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html#aut">Authors</a></li>
-        <li><a href="https://codeathjohnz.github.io/Welcoo/Gallery.html#footer">Contact Us</a></li>
-      </ul>
-        </li>
-    </ul>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-  </nav>
-    <div class="bigscreen">
-    <!--End of Nav Bar-->
-  <div class="container">
-    <div class="sidebar">
-      <div class="adjustcin">
-        <button onclick="showWallpapers()">Wallpaper</button>
-        <button onclick="showProductInfo()">Product Pack</button>
-        <button onclick="showGadgets()">Gadgets</button>
-      </div>
+    <div class="container">
+        <h1>Under Development</h1>
+        <p>This Gallery Section is currently under development and will be available soon. Please check back later.</p>
     </div>
-
-    <div class="gallery">
-      <img src="https://a-static.besthdwallpaper.com/asus-rog-republic-of-gamers-cyber-city-wallpaper-3000x2000-63807_42.jpg" alt="Wallpaper 1" class="wallpaper" onclick="showFullImage(this.src)">
-      <img src="https://dlcdnrog.asus.com/rog/media/1610705439253.webp" alt="Wallpaper 2" class="wallpaper" onclick="showFullImage(this.src)">
-      <img src="https://dlcdnrog.asus.com/rog/media/1554200908315.webp" alt="Wallpaper 3" class="wallpaper" onclick="showFullImage(this.src)">
-      <img src="https://codeathjohnz.github.io/Codeath/Welcoo.jpg" alt="Wallpaper 4" class="wallpaper" onclick="showFullImage(this.src)">
-      <img src="https://dlcdnwebimgs.asus.com/gain/9EB0C91D-5C6D-4F7E-AEB1-7823F8B76594/fwebp" alt="Product 1" class="product" onclick="showFullImage(this.src)">
-      <img src="https://dlcdnwebimgs.asus.com/gain/b71abe72-7585-4906-b343-638ee144738a/" alt="Product 2" class="product" onclick="showFullImage(this.src)">
-        <img src="https://codeathjohnz.github.io/Welcoo/pack.jpg" alt="Product 3" class="product" onclick="showFullImage(this.src)">
-      <img src="https://images.hothardware.com/contentimages/newsitem/59825/content/4x3_1600x1200_highres-Asus_ROG_Phone_6_Batman_Edition_News.jpg" alt="Gadget 1" class="gadget" onclick="showFullImage(this.src)">
-      <img src="https://www.ubuy.com.ph/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFmWm14QmJRZ0wuX0FDX1NMMTUwMF8uanBn.jpg" alt="Gadget 2" class="gadget" onclick="showFullImage(this.src)">
-      <!-- Add more <img> tags for additional images -->
-    </div>
-
-    <div class="full-image-overlay" onclick="hideFullImage()">
-      <img class="full-image" src="" alt="Full Image">
-    </div>
-  </div>
-    
-     <!--Footer Area-->
-    <div id="footer"></div>
-    <footer>
-    <p class="footer-upper">Thank You for choosing <b><i>Welcoo Company</i></b> as your trusted technology partner.<br> We look forward to serving you and providing you with the best tech products and services available.<br>
-      If you have any questions or assistance, please don't hesitate to contact us.</p>
-    <div class="socialmedia">
-      <a href="https://web.facebook.com/profile.php?id=100093550560302&is_tour_completed=true" target="_blank" class="fa fa-facebook"></a>
-      <a href="https://twitter.com/WelcooCoy" target="_blank" class="fa fa-twitter"></a>
-      <a href="https://www.instagram.com/welcoocompany/" target="_blank" class="fa fa-instagram"></a>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy;2023 Welcoo Company </p>
-    </div>
-  </footer>
-    </div>
-
-    <!--small screen area-->
-<div class="small-screen-content">
-
-<div class="container">
-  <div class="photo-gallery">
-    <img src="https://a-static.besthdwallpaper.com/asus-rog-republic-of-gamers-cyber-city-wallpaper-3000x2000-63807_42.jpg" Names="wallpaper" alt="Photo 1">
-<img src="https://codeathjohnz.github.io/May/352185495_155426294183367_4734722557251752590_n.jpg" Names="wallpaper" alt="Photo 1">
-      <img src="https://codeathjohnz.github.io/Codeath/Welcoo.jpg" Names="wallpaper" alt="Photo 1">
-      <img src="https://codeathjohnz.github.io/Codeath/blackwelcoo.jpg" Names="wallpaper" alt="Photo 1">
-      
-
-    <img src="https://codeathjohnz.github.io/May/desktop.jpg" Names="product" alt="Photo 2">
-<img src="https://codeathjohnz.github.io/May/dtop.jpg" Names="product" alt="Photo 3">
-<img src="https://codeathjohnz.github.io/May/loplop.jpg" Names="product" alt="Photo 4">
-<img src="https://codeathjohnz.github.io/May/opopwer.jpg" Names="product" alt="Photo 5">
-<img src="https://codeathjohnz.github.io/May/smartwatch.jpg" Names="product" alt="Photo 6">
-<img src="https://codeathjohnz.github.io/May/smartwatch1.jpg" Names="product" alt="Photo 7">
-<img src="https://codeathjohnz.github.io/May/welcoo mobile.jpg" Names="product" alt="Photo 8">
-<img src="https://codeathjohnz.github.io/May/welcotop.jpg" Names="product" alt="Photo 9">
-<img src="https://codeathjohnz.github.io/May/welphone.jpg" Names="product" alt="Photo 10">
-<img src="https://codeathjohnz.github.io/May/weltop.jpg" Names="product" alt="Photo 11">
-    <img src="https://a-static.besthdwallpaper.com/asus-rog-republic-of-gamers-cyber-city-wallpaper-3000x2000-63807_42.jpg" Names="packgadgets" alt="Photo 12">
-  </div>
-  
-</div>
-
-<footer>
-<div class="button-container">
-    <a href="#" class="button" onclick="showAll()">All</a>
-    <a href="#" class="button" onclick="showWallpapers()">Wallpaper</a>
-    <a href="#" class="button" onclick="showProducts()">Gadgets</a>
-    <a href="#" class="button" onclick="showPackproducts()">Product Pack</a>
-  </div>
-  <div class="footer-upper">
-    <p>Thank You for choosing <b><i>Welcoo Company</i></b> as your trusted technology partner.<br>We look forward to serving you and providing you with the best tech products and services available.<br>If you have any questions or need assistance, please don't hesitate to contact us.</p>
-  </div>
-  <div class="socialmedia">
-    <a href="https://web.facebook.com/profile.php?id=100093550560302&is_tour_completed=true" target="_blank" class="fa fa-facebook"></a>
-    <a href="https://twitter.com/WelcooCoy" target="_blank" class="fa fa-twitter"></a>
-    <a href="https://www.instagram.com/welcoocompany/" target="_blank" class="fa fa-instagram"></a>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy;2023 Welcoo Company </p>
-  </div>
-</footer>
-</div>
-    <script src="pilianan.js"></script>
-  <script src="Gallery.js"></script>
-
-    //small screen script
-
-    <script>
-
-  function showAll() {
-    const gallery = document.getElementsByClassName("photo-gallery")[0];
-    const images = gallery.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-      images[i].classList.remove("hide");
-    }
-  }
-
-  function showWallpapers() {
-    const gallery = document.getElementsByClassName("photo-gallery")[0];
-    const images = gallery.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-      const image = images[i];
-      if (image.getAttribute("Names") !== "wallpaper") {
-        image.classList.add("hide");
-      } else {
-        image.classList.remove("hide");
-      }
-    }
-  }
-
-  function showProducts() {
-    const gallery = document.getElementsByClassName("photo-gallery")[0];
-    const images = gallery.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-      const image = images[i];
-      if (image.getAttribute("Names") !== "product") {
-        image.classList.add("hide");
-      } else {
-        image.classList.remove("hide");
-      }
-    }
-  }
-
-function showPackproducts() {
-    const gallery = document.getElementsByClassName("photo-gallery")[0];
-    const images = gallery.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-      const image = images[i];
-      if (image.getAttribute("Names") !== "packgadgets") {
-        image.classList.add("hide");
-      } else {
-        image.classList.remove("hide");
-      }
-    }
-  }
-
-//navbar script
-
-
-      //menu script
-      function toggleMenu() {
-      var menu = document.querySelector('.menu');
-      menu.classList.toggle('show');
-    }
-
-</script>
 </body>
 </html>
