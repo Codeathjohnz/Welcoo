@@ -412,6 +412,9 @@ nav {
   .show-products[Names="product"]:not(.hide) {
     display: block;
   }
+     .bigscreen{
+      display: none;
+     }
 
     }
 
