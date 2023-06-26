@@ -8,6 +8,259 @@
   <link rel="stylesheet" type="text/css" href="Gallery.css">
      <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         @media screen and (max-width: 768px) {
+            .small-screen-content {
+                 nav {
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+        height: 80px;
+    }
+      .sub-menu {
+   display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 2;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+      .sub-menu li {
+    margin: 10px 0;
+  }
+      .menu li:hover .sub-menu {
+      display: block;
+    }
+      .sub-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+
+  .sub-menu li a:hover {
+    color: #02f533;
+  }
+
+    .logo {
+      width: 80px; /* Adjust the width as needed */
+      height: 100px; /* Adjust the height as needed */
+      overflow: hidden;
+    }
+
+    .logo img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+        margin: 15px 2px;
+    }
+
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    align-items: center;
+    }
+
+    .menu li {
+      position: relative;
+    padding: 0 30px;
+    }
+
+    .menu li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+
+    .menu li a:hover {
+      color: #02f533;
+    }
+      .hamburger {
+      display: none;
+    }
+      /* Media query for mobile screens */
+    @media only screen and (max-width: 600px) {
+      .menu {
+        display: none;
+      }
+
+      .menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+      }
+
+      .menu.show li {
+        padding: 10px;
+      }
+
+      .menu.show li a {
+        padding: 0;
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+    }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-image: linear-gradient(to bottom, #02f533, black);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #02f533, 0 0 20px #02f533;
+    }
+    100% {
+      box-shadow: 0 0 20px #02f533, 0 0 40px #02f533;
+    }
+  }
+
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 230px;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  /*footer area*/
+
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    color: #13e00b;
+    transition: 0.45s ease;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+
+  footer {
+    background-color: #2e2e2e;
+    color: #f3f3f3;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+.footer-upper {
+    padding: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #505050;
+    padding: 15px 0;
+  }
+
+  .footer-bottom p {
+    word-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+
+  /* Custom CSS for filtering */
+  .hide {
+    display: none;
+  }
+
+  .show-wallpapers[Names="wallpaper"]:not(.hide),
+  .show-products[Names="product"]:not(.hide) {
+    display: block;
+  }
+            }
+        }
+        
+        /* Styles for larger screens */
+        @media screen and (min-width: 769px) {
+            .small-screen-content {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <!--Nav bar Area-->
@@ -73,9 +326,135 @@
       <p>&copy;2023 Welcoo Company </p>
     </div>
   </footer>
+
+    <!--small screen area-->
+<div class="small-screen-content">
+    <nav>
+    <a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html" class="logo">
+      <img src="https://codeathjohnz.github.io/Welcoo/Logo.jpg" alt="Logo">
+    </a>
+    <ul class="menu">
+      <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html">Home</a></li>
+      <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html#l">Product</a></li>
+      <li><a href="https://codeathjohnz.github.io/Welcoo/Gallery.html">Gallery</a></li>
+      <li>
+          <a href="#">About Us</a>
+          <ul class="sub-menu">
+        <li><a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html#cam">About Company</a></li>
+        <li><a href="https://codeathjohnz.github.io/Welcoo/Aboutus.html#aut">Authors</a></li>
+        <li><a href="https://codeathjohnz.github.io/Welcoo/Welcoo.html#footer">Contact Us</a></li>
+      </ul>
+        </li>
+    </ul>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+
+<div class="container">
+  <div class="photo-gallery">
+    <img src="https://a-static.besthdwallpaper.com/asus-rog-republic-of-gamers-cyber-city-wallpaper-3000x2000-63807_42.jpg" Names="wallpaper" alt="Photo 1">
+<img src="https://codeathjohnz.github.io/May/352185495_155426294183367_4734722557251752590_n.jpg" Names="wallpaper" alt="Photo 1">
+      <img src="https://codeathjohnz.github.io/Codeath/Welcoo.jpg" Names="wallpaper" alt="Photo 1">
+      <img src="https://codeathjohnz.github.io/Codeath/blackwelcoo.jpg" Names="wallpaper" alt="Photo 1">
+      
+
+    <img src="https://codeathjohnz.github.io/May/desktop.jpg" Names="product" alt="Photo 2">
+<img src="https://codeathjohnz.github.io/May/dtop.jpg" Names="product" alt="Photo 3">
+<img src="https://codeathjohnz.github.io/May/loplop.jpg" Names="product" alt="Photo 4">
+<img src="https://codeathjohnz.github.io/May/opopwer.jpg" Names="product" alt="Photo 5">
+<img src="https://codeathjohnz.github.io/May/smartwatch.jpg" Names="product" alt="Photo 6">
+<img src="https://codeathjohnz.github.io/May/smartwatch1.jpg" Names="product" alt="Photo 7">
+<img src="https://codeathjohnz.github.io/May/welcoo mobile.jpg" Names="product" alt="Photo 8">
+<img src="https://codeathjohnz.github.io/May/welcotop.jpg" Names="product" alt="Photo 9">
+<img src="https://codeathjohnz.github.io/May/welphone.jpg" Names="product" alt="Photo 10">
+<img src="https://codeathjohnz.github.io/May/weltop.jpg" Names="product" alt="Photo 11">
+    <img src="https://a-static.besthdwallpaper.com/asus-rog-republic-of-gamers-cyber-city-wallpaper-3000x2000-63807_42.jpg" Names="packgadgets" alt="Photo 12">
+  </div>
+  
+</div>
+
+<footer>
+<div class="button-container">
+    <a href="#" class="button" onclick="showAll()">All</a>
+    <a href="#" class="button" onclick="showWallpapers()">Wallpaper</a>
+    <a href="#" class="button" onclick="showProducts()">Gadgets</a>
+    <a href="#" class="button" onclick="showPackproducts()">Product Pack</a>
+  </div>
+  <div class="footer-upper">
+    <p>Thank You for choosing <b><i>Welcoo Company</i></b> as your trusted technology partner.<br>We look forward to serving you and providing you with the best tech products and services available.<br>If you have any questions or need assistance, please don't hesitate to contact us.</p>
+  </div>
+  <div class="socialmedia">
+    <a href="https://web.facebook.com/profile.php?id=100093550560302&is_tour_completed=true" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/WelcooCoy" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/welcoocompany/" target="_blank" class="fa fa-instagram"></a>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy;2023 Welcoo Company </p>
+  </div>
+</footer>
+</div>
     <script src="pilianan.js"></script>
-  <script src="Gallery.js">
-    
-  </script>
+  <script src="Gallery.js"></script>
+
+    //small screen script
+
+    <script>
+
+  function showAll() {
+    const gallery = document.getElementsByClassName("photo-gallery")[0];
+    const images = gallery.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+      images[i].classList.remove("hide");
+    }
+  }
+
+  function showWallpapers() {
+    const gallery = document.getElementsByClassName("photo-gallery")[0];
+    const images = gallery.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+      const image = images[i];
+      if (image.getAttribute("Names") !== "wallpaper") {
+        image.classList.add("hide");
+      } else {
+        image.classList.remove("hide");
+      }
+    }
+  }
+
+  function showProducts() {
+    const gallery = document.getElementsByClassName("photo-gallery")[0];
+    const images = gallery.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+      const image = images[i];
+      if (image.getAttribute("Names") !== "product") {
+        image.classList.add("hide");
+      } else {
+        image.classList.remove("hide");
+      }
+    }
+  }
+
+function showPackproducts() {
+    const gallery = document.getElementsByClassName("photo-gallery")[0];
+    const images = gallery.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+      const image = images[i];
+      if (image.getAttribute("Names") !== "packgadgets") {
+        image.classList.add("hide");
+      } else {
+        image.classList.remove("hide");
+      }
+    }
+  }
+
+//navbar script
+
+
+      //menu script
+      function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('show');
+    }
+
+</script>
 </body>
 </html>
