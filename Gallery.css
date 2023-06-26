@@ -291,6 +291,127 @@ nav {
         cursor: pointer;
         padding: 10px;
       }
+     .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-image: linear-gradient(to bottom, #02f533, black);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #02f533, 0 0 20px #02f533;
+    }
+    100% {
+      box-shadow: 0 0 20px #02f533, 0 0 40px #02f533;
+    }
+  }
+
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 230px;
+  }
+
+  .photo-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  /*footer area*/
+
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    color: #13e00b;
+    transition: 0.45s ease;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+
+  footer {
+    background-color: #2e2e2e;
+    color: #f3f3f3;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+.footer-upper {
+    padding: 0 20px;
+  }
+
+  .footer-bottom {
+    background-color: #505050;
+    padding: 15px 0;
+  }
+
+  .footer-bottom p {
+    word-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+  }
+
+  /* Custom CSS for filtering */
+  .hide {
+    display: none;
+  }
+
+  .show-wallpapers[Names="wallpaper"]:not(.hide),
+  .show-products[Names="product"]:not(.hide) {
+    display: block;
+  }
+     
 
     }
 
