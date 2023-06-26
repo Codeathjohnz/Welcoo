@@ -252,6 +252,9 @@
     display: block;
   }
             }
+             .bigscreen{
+                display: none;
+            }
         }
         
         /* Styles for larger screens */
@@ -259,15 +262,13 @@
             .small-screen-content {
                 display: none;
             }
-            .bigscreen{
-                display: none;
-            }
+            
         }
         
     </style>
 </head>
 <body>
-    <div class="bigscreen">
+    
     <!--Nav bar Area-->
     <nav>
     <a href="#" class="logo">
@@ -288,7 +289,7 @@
     </ul>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </nav>
-    
+    <div class="bigscreen">
     <!--End of Nav Bar-->
   <div class="container">
     <div class="sidebar">
